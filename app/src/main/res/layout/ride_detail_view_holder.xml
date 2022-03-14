@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    android:layout_marginTop="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:background="#171717">
+
+        <ImageView
+            android:id="@+id/mapImage"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/map" />
+
+        <TextView
+            android:id="@+id/cityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/inter_medium"
+            android:text="@string/city_name"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/mapImage"
+            app:layout_constraintTop_toBottomOf="@+id/mapImage" />
+
+        <TextView
+            android:id="@+id/stateName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/state_name"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/mapImage"
+            app:layout_constraintTop_toTopOf="@+id/cityName" />
+
+        <TextView
+            android:id="@+id/rideId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/ride_id_002"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="18sp"
+            android:textColor="#CFCFCF"
+            app:layout_constraintEnd_toEndOf="@+id/stateName"
+            app:layout_constraintStart_toStartOf="@+id/cityName"
+            app:layout_constraintTop_toBottomOf="@+id/cityName" />
+
+        <TextView
+            android:id="@+id/originStation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/origin_station_20"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="18sp"
+            android:textColor="#CFCFCF"
+            app:layout_constraintEnd_toEndOf="@+id/rideId"
+            app:layout_constraintStart_toStartOf="@+id/rideId"
+            app:layout_constraintTop_toBottomOf="@+id/rideId" />
+
+        <TextView
+            android:id="@+id/stationPath"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/station_path_20_39_40_42_54_63_72_88_98"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="18sp"
+            android:textColor="#CFCFCF"
+            app:layout_constraintEnd_toEndOf="@+id/originStation"
+            app:layout_constraintStart_toStartOf="@+id/originStation"
+            app:layout_constraintTop_toBottomOf="@+id/originStation" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/date_15th_feb_2022_16_33"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="18sp"
+            android:textColor="#CFCFCF"
+            app:layout_constraintEnd_toEndOf="@+id/stationPath"
+            app:layout_constraintStart_toStartOf="@+id/stationPath"
+            app:layout_constraintTop_toBottomOf="@+id/stationPath" />
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/distance_0"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="18sp"
+            android:textColor="#CFCFCF"
+            app:layout_constraintEnd_toEndOf="@+id/date"
+            app:layout_constraintStart_toStartOf="@+id/date"
+            app:layout_constraintTop_toBottomOf="@+id/date" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
